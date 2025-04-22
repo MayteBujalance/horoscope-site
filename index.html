@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horoscope Site</title>
+    <title>Your Horoscope</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+    <!-- Flaticon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
      <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-     <!-- Custom CSS -->
+     <!--Fontawsome Link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
      <link href="assets/css/styles.css" rel="stylesheet">
     </head>
 <body>
      <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-light navbar-custom">
+     <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Horoscope</a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.PNG " alt="Logo" width="30" height="30"> Horoscope
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,6 +44,9 @@
                         <a class="nav-link" href="#articles">Articles</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -43,12 +58,13 @@
         <div class="container-fluid">
             <h1 class="display-4">Welcome to the Horoscope Site</h1>
             <p class="lead">Discover your daily horoscope and astrological insights.</p>
-            <a href="#cards-section" class="btn btn-light btn-lg">Explore Now</a>
+            <a href="subscribe.html" class="btn btn-light btn-lg">Subscribe Now</a>
         </div>
     </header>
 
     <!-- Cards Section -->
-     <main class="container">
+     <main class="container-fluid">
+    
     <section id="cards-section" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Choose Your Zodiac Sign</h2>
@@ -175,44 +191,80 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
-    <!-- Testimonial Section -->
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">What People Say</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Testimonial 1 -->
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="User">
-                            <p class="text-center">"This site is amazing! I check my horoscope every day."</p>
-                            <small>- User 1</small>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="User">
-                            <p class="text-center">"The insights are so accurate and helpful!"</p>
-                            <small>- User 2</small>
-                        </div>
+   <!-- Testimonial Section -->
+<section class="my-5">
+    <h2 class="Display-5 text-center">Testimonials</h2>
+    <p class="text-center">Hear from our satisfied clients about our Horoscope Site</p>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card h-100 text-center mx-auto" style="max-width: 600px;">
+                    <img src="assets/images/testimonial 1.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Client 1" style="width: 100px; height: 100px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">"This site provides daily inspiration. Highly recommended!"</p>
+                        <h5 class="card-title">- Sarah L.</h5>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="carousel-item">
+                <div class="card h-100 text-center mx-auto" style="max-width: 600px;">
+                    <div class="card-body">
+                        <img src="assets/images/testimonial 2.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Client 1" style="width: 100px; height: 100px; object-fit: cover;">
+                        <p class="card-text">"Amazing insights! I feel more connected to myself every day."</p>
+                        <h5 class="card-title">- John D.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card h-100 text-center mx-auto" style="max-width: 600px;">
+                    <img src="assets/images/testimonial 3.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Client 1" style="width: 100px; height: 100px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">"A wonderful experience that brings clarity and peace!"</p>
+                        <h5 class="card-title">- Emily R.</h5>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 </main>
-<!-- Footer -->
+  <!-- Footer / Contact section -->
+<footer id="contact" class="mt-auto bg-light py-4">
+    <hr class="my-4">
+    <div class="container text-center">
+        
+        <h5 class="mb-3">Follow Us</h5>
+        <div class="social-links my-4">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page (opens in a new tab)">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page (opens in a new tab)">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our X, formely known as Tweeter, feed (opens in a new tab)">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel (opens in a new tab)">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <p class="mt-3 mb-0">&copy; 2025 Horoscope Site. All rights reserved.</p>
+    </div>
+</footer>
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
