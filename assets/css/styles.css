@@ -3,9 +3,18 @@
 body {
     font-family: 'macondo', sans-serif;
     background-color: #f8f9fa;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding-top: 50px;
+    display: flex;
 }
+
+
+footer {
+  padding: 20px 0;
+}
+
 .navbar-custom {
     color: black;
 }
@@ -37,8 +46,21 @@ body {
   margin-bottom: 20px;
   color: pink;
 }
+/* newsletter hero section */
+.newsletter-section {
+  background: url('../images/newsletter-hero-image.JPG') repeat center center/cover;
+  background-size: cover;
+  padding: 100px 0;
+  color: pink;
+  text-align: center;
+}
 
-/* Video Background */
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: pink;
+}
+/* Video Background
 .video-background {
   position: relative;
   height: 100vh;
@@ -65,9 +87,9 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
+ 
 
+ */
 .content {
   position: relative;
   z-index: 2;
@@ -76,7 +98,7 @@ body {
 }
 
 
-/* horoscope section */
+/* horoscope Cards section */
 .card {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Right bottom shadow */
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
@@ -91,11 +113,17 @@ body {
   transform: translateY(-5px); /* Slight lift on hover */
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
-/* Contact section */
+/* Footer section */
+#contact {background: url('../images/astrology 2.jpg') center center/cover;
+background-size: cover;
+padding: 20px 0;
+color: pink;
+text-align: center;
+}
 
 #contact .social-links i {
   margin: 0 20px;
-  color: blueviolet;
+  color: pink;
   font-size: 1.9rem;
   transition: color 0.3s ease-in-out;
 }   
@@ -103,4 +131,31 @@ body {
 #contact .social-links i:hover {
   color: rgb(230, 25, 189);
   
+}
+
+/* button */
+.btn {
+  background-color: pink;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: purple;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(230, 25, 189); /* Darker pink on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  color:#f8f9fa
+}
+
+/* Change the color of the radio button */
+.form-check-input:checked {
+  background-color: rgb(230, 25, 189);
+  border-color: rgb(230, 25, 189);
+}
+
+.form-check-input {
+  accent-color: rgb(230, 25, 189); /* For modern browsers */
 }
