@@ -61,6 +61,7 @@ footer {
   margin-bottom: 20px;
   color: pink;
 }
+
 /* newsletter hero section */
 .newsletter-section {
   background: url('../images/newsletter-hero-image.JPG') repeat center center/cover;
@@ -70,11 +71,14 @@ footer {
   text-align: center;
 }
 
-.hero-section h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.about-hero-section {
+  background: url('../images/hero-about.jpg') repeat center center/cover;
+  background-size: cover;
+  padding: 100px 0;
   color: pink;
+  text-align: center;
 }
+
 /* Video Background
 .video-background {
   position: relative;
