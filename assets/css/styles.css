@@ -27,9 +27,7 @@ h2, h3 {
   font-style: normal;
 }
 
-footer {
-  padding: 20px 0;
-}
+
 
 .navbar-custom {
     color: black;
@@ -57,8 +55,6 @@ footer {
   text-align: center;
 }
 
-
-
 /* newsletter hero section */
 .newsletter-section {
   background: url('../images/newsletter-hero-image.JPG') repeat center center/cover;
@@ -74,6 +70,35 @@ footer {
   padding: 100px 0;
   color: pink;
   text-align: center;
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  color: white;
+}
+
+/* Background video */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+/* Main content */
+main {
+  position: relative;
+  z-index: 2; /* Ensures the content is above the video */
+  
 }
 
 #success {
@@ -144,6 +169,10 @@ color: pink;
 text-align: center;
 }
 
+footer {
+  padding: 20px 0;
+}
+
 #contact .social-links i {
   margin: 0 20px;
   color: pink;
@@ -160,11 +189,12 @@ text-align: center;
 .btn {
   background-color: pink;
   border: none;
+  border-radius: 25px;
   padding: 10px 20px;
   font-size: 1.2rem;
   color: purple;
   text-decoration: none;
-  border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .btn:hover {
@@ -189,5 +219,20 @@ text-align: center;
   height: 100px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  
+  }
+
+  .underlined {
+    position: relative;
+    margin-right: 0.3rem;
+}
+.underlined:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 7px;
+  width: 95%;
+  border: solid 2px rgb(230, 25, 189);
+  border-color: rgb(230, 25, 189) transparent transparent transparent;
+  border-radius: 50%;
 }
