@@ -58,6 +58,7 @@ h2, h3 {
 /* newsletter hero section */
 .newsletter-section {
   background: url('../images/newsletter-hero-image.JPG') repeat center center/cover;
+  background-size: contain;
   background-size: cover;
   padding: 100px 0;
   color: pink;
@@ -66,7 +67,8 @@ h2, h3 {
 /* about hero section */
 .about-hero-section {
   background: url('../images/about-hero.jpg') repeat center center/cover;
-  background-size: cover;
+  background-size: contain; /* Use contain to fit the image within the section */
+  background-size: cover; /* Use cover to fill the section with the image */
   padding: 100px 0;
   color: pink;
   text-align: center;
@@ -108,36 +110,7 @@ main {
   text-align: center;
   }
 
-/* Video Background
-.video-background {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
 
-.background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
- 
-
- */
 .content {
   position: relative;
   z-index: 2;
