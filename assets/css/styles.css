@@ -209,3 +209,66 @@ footer {
   border-color: rgb(230, 25, 189) transparent transparent transparent;
   border-radius: 50%;
 }
+/* Media Queries for smaller screens*/
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    height: 40vh; /* Reduce the height for smaller screens */
+    padding: 50px 0; /* Reduce padding */
+    background-size: contain no-repeat; /* Ensure the entire image fits within the section */
+  }
+
+  .about-hero-section h1 {
+    font-size: 2rem; /* Reduce font size for headings */
+  }
+
+  .about-hero-section p {
+    font-size: 1rem; /* Reduce font size for the paragraph */
+  }
+
+  .btn {
+    font-size: 1rem; /* Adjust button size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+ 
+    
+    /* Reduce card size */
+    .card {
+      transform: scale(0.8); /* Shrink the card size slightly */
+      margin-bottom: 20px; /* Add spacing between cards */
+    }
+  
+    /* Adjust card image */
+    .card img {
+      height: auto; /* Reduce the height of the card image */
+      object-fit: cover; /* Ensure the image fits within the reduced size */
+      width: 100%;
+    }
+  
+    /* Adjust card text */
+    .card .card-title {
+      font-size: 1.5rem; /* Reduce the font size of the card title */
+    }
+  
+    .card .card-text {
+      font-size: 1.5rem; /* Reduce the font size of the card text */
+    }
+  
+    /* Adjust card section padding */
+    #cards-section {
+      padding: 50px 0; /* Reduce padding for the cards section */
+    }
+    
+.card:hover {
+  transform: scale(0.9); /* Slightly reduce the scale on hover */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+.img-fluid {
+  max-width: 15%; /* Reduce the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin-top: 5px;
+
+}
+
+
+}
