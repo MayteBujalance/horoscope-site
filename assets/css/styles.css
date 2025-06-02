@@ -125,6 +125,14 @@ main {
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
   align-items: center;
 }
+
+.card .card-img-top {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the card area */
+  border-radius: 10px 10px 0 0; /* Rounded corners for the top of the card */
+}
+
 #cards-section {
   padding: 100px 0; /* Add padding to separate it from the video background */
   position: relative; /* Ensure it is not overlapped by the video */
@@ -238,14 +246,7 @@ footer {
       margin-bottom: 20px; /* Add spacing between cards */
     }
   
-    /* Adjust card image */
-    .card img {
-      height: auto; /* Reduce the height of the card image */
-      object-fit: cover; /* Ensure the image fits within the reduced size */
-      width: 100%;
-    }
-  
-    /* Adjust card text */
+        /* Adjust card text */
     .card .card-title {
       font-size: 1.5rem; /* Reduce the font size of the card title */
     }
@@ -269,6 +270,4 @@ footer {
   margin-top: 5px;
 
 }
-
-
 }
